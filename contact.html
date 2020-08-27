@@ -1,61 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Contact Us</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet"  href="css/contact.css">
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 
 <body>
+	<!--Navbar -->
+	<div class="container">
+		<nav class="navbar">
+			<h2>S&J</h2>
+			<div class="hamburger">
+				<img id="lines" src="img/nav-hamburger.png">
+			</div>
+			<ul class="navlist">
+				<li class="navitem">
+					<a class="navlink" href="index.html">Home</a>
+				</li>
+				<li class="navitem">
+					<a href="services.html">Services</a>
+				</li>
+				<li class="navitem">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<!--Header Image-->
+	<div class="header">
+	<h1>Contact Us</h1>
+	</div>
+	<!--Contact forms-->
+	<section class="contactform">
+	<div class="form">
+	<h2>Get In Touch</h2>
 
-	<h1>Contact</h1>
+	<p class="contactformtext">Email Address</p>
+	<input type="text" class="email" id="contactemail" value="Enter Email" />
+	<p id="disclosure">We'll never share your email with anyone else.</p>
 
-<!-- Contactd Us Content 
-  Contact Us
-  
-Get In Touch
+	<p class="contactformtext">How many buildings do you need planned?</p>
+	1-5
+	<div class="overview">
+		<label for="overview" class="overviewlabel">Provide a brief overview of your project needs:</label>
+		<textarea id="overviewtext"></textarea>
+	</div>
+	<input id="smallbusiness" name="how" type="radio">
+	<label for="needs" class="radiobutton">I am a small business</label>
+	<input id="residential" name="how" type="radio">
+	<label for="needs" class="radiobutton">I am a residential owner</label>
+	<input id="corporation" name="how" type="radio">
+	<label for="needs" class="radiobutton">I am a corporation</label>
+	
+	
 
-Email Address
-Enter Email
-We'll never share your email with anyone else.
-
-How many buildings do you need planned?
-1-5
-
-Provide a brief overview of your project needs:
-
-I am a small business
-I am a residential owner
-I am a corporation
-
-Submit
-
-Where We Work
-
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
-
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
-
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
-
--->
+	<button class="submit">Submit</button>
+</div>
+<div class="workloc">
+	<h2>Where We Work</h2>
+	<div class="work">
+		<h2>New York</h2>
+		<p>123 Lane</p>
+		<p>Suite 100</p>
+		<p>Albany, NY 12345</p>
+		<p>202 555 0144</p>
+	</div>
+	<div class="work">
+		<h2>Florida</h2>
+		<p>Ocean Drive</p>
+		<p>Suite 201</p>
+		<p>Orlando, FL 22345</p>
+		<p>502 555 0144</p>
+	</div>
+	<div class="work">
+		<h2>California</h2>
+		<p>Mountain Street</p>
+		<p>Suite 105</p>
+		<p>San Diego, CA 22345</p>
+		<p>702 555 0144</p>
+	</div>
+</div>
+</section>
+	<!--Footer -->
+	<footer>
+		<div class="locations">
+			<div class="footer">
+				<h2>Interested in starting a project?</h2>
+				<h2>Let’s talk:</h2>
+				<input type="text"class="email" value="Enter Email" />
+				<p>We'll never share your email with anyone else.</p>
+			</div>
+			<div class="footer">
+				<h2>New York</h2>
+				<p>123 Lane</p>
+				<p>Suite 100</p>
+				<p>Albany, NY 12345</p>
+				<p>202 555 0144</p>
+			</div>
+			<div class="footer">
+				<h2>Florida</h2>
+				<p>Ocean Drive</p>
+				<p>Suite 201</p>
+				<p>Orlando, FL 22345</p>
+				<p>502 555 0144</p>
+			</div>
+			<div class="footer">
+				<h2>California</h2>
+				<p>Mountain Street</p>
+				<p>Suite 105</p>
+				<p>San Diego, CA 22345</p>
+				<p>702 555 0144</p>
+			</div>
+		</div>
+		<p class="copyright">Copyright © 2018 Smith and Jones</p>
+	</footer>
 
 	<script src="js/index.js"></script>
 </body>
+
 </html>
