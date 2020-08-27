@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 	<title>Services</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/services.css">
@@ -13,7 +14,7 @@
     <header>
         <nav>
             <p>S&J</p>
-            <img src="img/nav-hamburger.png" alt="hamburger menu button">            
+            <img class="hamburger-menu-icon" src="img/nav-hamburger.png" alt="hamburger menu button">            
         </nav>
         <div class="jumbotron">
             <img src="img/services/services-jumbotron.png" alt="Banner image of solar panels"> 
@@ -24,12 +25,12 @@
         <p>Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
     </div>
     <div class="tabs">
-        <button>Pre-Construction</button>
-        <button>Construction</button>
-        <button>Design Build</button>
-        <button>Sustainability</button>
+        <button data-tab-target="#pre-construction" class="active tab">Pre-Construction</button>
+        <button data-tab-target="#construction" class="tab">Construction</button>
+        <button data-tab-target="#design-build" class="tab">Design Build</button>
+        <button data-tab-target="#sustainability" class="tab">Sustainability</button>
     </div>
-    <div class="tab">
+    <div class="active tab-content-container" id="pre-construction" data-tab-content>
         <div class="content-text">
             <h3>Pre-Construction</h3>
             <p>Completely Synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
@@ -38,7 +39,7 @@
         </div>
         <img src="img/services/services-tab-pre-construction-img.png" alt="Image of blueprints"> 
     </div>
-    <div class="tab">
+    <div class="tab-content-container" id="construction" data-tab-content>
         <div class="content-text">
             <h3>Construction</h3>
             <p>Completely Synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
@@ -47,7 +48,7 @@
         </div>
         <img src="img/services/services-tab-construction-img.png" alt="Image of blueprints"> 
     </div>
-    <div class="tab">
+    <div class="tab-content-container" id="design-build" data-tab-content>
         <div class="content-text">
             <h3>Design Build</h3>
             <p>Completely Synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
@@ -56,7 +57,7 @@
         </div>
         <img src="img/services/services-tab-design-build-img.png" alt="Image of blueprints"> 
     </div>
-    <div class="tab">
+    <div class="tab-content-container" id="sustainability" data-tab-content>
         <div class="content-text">
             <h3>Sustainability</h3>
             <p>Completely Synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
@@ -68,30 +69,36 @@
     <footer>
         <div class="email-form">
             <h4>Interested in starting a project? <br> Let's talk:</h4>
-            <form></form>
+            <form>
+                <input type="text" id="email-form" name="Email" placeholder="Enter email">
+            </form>
             <p>We'll never share your email with anyone else.</p>
         </div>
-        <div class="new-york">
+        <div class="address">
             <h4>New York</h4>
             <p>123 Lane</p>
             <p>Suite 100</p>
             <p>Albany, NY 12345</p>
             <p>202 555 0144</p>
         </div>
-        <div class="florida">
+        <div class="address">
             <h4>Florida</h4>
             <p>Ocean Drive</p>
             <p>Suite 201</p>
             <p>Orlando, FL 22345</p>
             <p>502 555 0144</p>
         </div>
-        <div class="california">
+        <div class="address">
             <h4>California</h4>
             <p>Mountain Street</p>
             <p>Suite 105</p>
             <p>San Diego, CA 22345</p>
-            <p>702 555 0144/p>
+            <p>702 555 0144</p>
         </div>
     </footer>
+    <div class="copyright-container">
+        <p class="copyright">Copyright © 2018 Smith and Jones</p>
+    </div>
+    <script src="js/services.js"></script>
 </body>
 </html>
