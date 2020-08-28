@@ -1,5 +1,6 @@
 /* Should be empty until you compile your LESS */
 
+
 body{
     Background: #FFFFFF;
     Color: #222222;
@@ -10,30 +11,26 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.container{
-    width: 100%;
-    background-color: #828282;
+nav {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    background-color: #9FA9B3;
+    font-weight: Bold;
+    height: 4vh;
+    padding: .5%;
 }
-.hamburger{
-    position: absolute;
-   top:3%;
-   right:3%;
-   display: block;
-   cursor: pointer;
-    }
-.navlist{
-    margin:0;
-    padding:0;
-    position: fixed;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    display: none;   
+
+#header {
+    Font-Size: 3rem;
+    margin-top: .5%;
+    margin-left: .5%
 }
-.navbar{
-    display:flex;
-    padding: 0 0 0 1rem;
-    color:#FFFFFF;
+
+.hamburger-menu-icon {
+    height: 65%;
+    margin-top: .5%;
+    margin-right: 2%;
 }
 body p{
     Font-Weight: Regular;
@@ -69,7 +66,7 @@ body p{
     align-items: center;
     display:flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 .aboutbox{
     position: relative;
@@ -78,29 +75,39 @@ body p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
-    width: 40%;
+    padding: 3rem 0;
+    width: 50%;
 }
 .toptext{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 3rem 0 3rem;
+    width:auto;
+    padding:0 1rem;
 }
 .button{
     border: 2px solid #222222;
     padding:1rem;
-    width:40%
+    width:40%;
 }
 #smith{
-    flex-flow: row-reverse;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
 }
-.recentprojects{
-    align-items: flex-start;
+#outskirts{
+    flex-direction: row;
+}
+#outskirtcontainer{
+    align-items: center;
     display:flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content:space-between;
+}
+.recentprojects{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
     text-align: center;
     width: 100%;
 }
@@ -109,22 +116,25 @@ body p{
     flex-direction: column;
     justify-content: space-around;
     padding:2rem;
-    width: 25%;
+    align-items: center;
+   
 }
 .projects{
-    position:relative;
+    width:50%;
     align-items: center;
     display:flex;
     flex-direction: column;
+    justify-content:space-between;
     
 }
-.projectimg{
-    position: relative;
+.projects p{
     width:50%;
+}
+.projectimg{
+    
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: row-reverse;
 }
 .splashtext{
     width:40%;
@@ -140,39 +150,201 @@ body p{
     Font-Size: 28px;
     Color: #222222;
 }
-.recentprojects h2{
-  width: 68%;
+.recenttitle{ 
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width:100%;
 }
-
-footer h2{
-    Font-Weight: Regular;
-    Font-Size: 20px;
-    Line-Height: 24px;
-    Color: #FFFFFF;
+.recenttitle h2{
+    text-align: start;
 }
-footer p{
-    Font-Weight: Regular;
-    Font-Size: 14px;
-    Line-Height: 26px;
-    Color: #FFFFFF;
+#disclosure{
+    color:#828282;
+    padding-top: 0;
+    margin-top: 0;
 }
-footer{
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    color: #FFF;
     background-color: #828282;
 }
-.locations{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
+
+.email-form input{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: none;
 }
-.email{
-    background-color: white;
-    color:black;
-    text-align: left;
-    border-radius: 5px;
+
+.email-form p {
+    font-size: 1rem;
+}
+
+footer input {
     width: 100%;
-    height: 3vh; 
-    border:0;
+    height: 3.5vh;
+    border-radius: 3px;
+    font-size: 1.5rem;
 }
-.copyright{
-    text-align: center;
+
+footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+}
+
+.address h4 {
+    margin-bottom: 8%;
+}
+
+.address p {
+    font-size: 1rem;
+    margin: 1% 0;
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: center;
+    background-color: #828282;
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-size: 1rem;
+}
+@media (max-width: 500px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        width: 43rem;
+         }
+    nav #header{
+        font-size:3rem;
+        padding:2.5rem;
+        
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+    .home {
+      
+        width:140%;
+    }
+    .home img{
+        width:43rem;
+    }
+    #header {
+        font-size: 1.5rem;
+        margin-top: 1%;
+        width: 100%;
+    }
+    
+    .hamburger-menu-icon {
+        width:7rem;
+        padding:2rem;
+        height:2.5rem;
+        
+    }
+    footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 140%;
+    }
+    .copyright-container{
+        width: 140%;  
+    }
+    footer input {
+        height: 2vh;
+    }
+    #smith{
+        flex-direction: column;
+    }
+    .aboutbox img{
+        width:39rem;
+        padding-left:2%;
+       
+    }
+    .about{
+        align-content: center;
+    }
+    .aboutbox{
+        width:100%;
+        flex-direction: column;
+        align-items: normal;
+    }
+    .aboutbox .toptext p{
+        line-height: 3rem;;
+    }
+    .aboutbox .toptext h2{
+        width:40rem;
+        font-size:3.1rem; 
+        margin-left:1.0rem;
+    }
+    .button{
+        margin-left:3rem;
+        padding: 1.5rem 10rem;
+        text-align: center;
+        font-size:1.5rem;
+    }
+    body p{
+        font-size:2rem;
+        width: 30rem;
+     
+        
+    }
+    .projecttext{
+        width:70rem;
+        text-align: left;
+        margin-left:11rem;
+        padding-top:8rem;
+    }
+    .projecttext p{
+        line-height: 2.5rem;
+    }
+    #outskirts .splashtext{
+        margin-left:20rem;
+    }
+    .splashtext{
+        margin-right:9rem;
+        font-size:1.5rem;
+        padding:2rem;
+        position: absolute;
+    }
+    .address{
+        padding:1rem;
+    }
+    .address h4{
+        margin: 0 auto;
+        font-size:2rem;
+    }
+    .address p{
+        font-size:1.3rem ;
+        line-height: 2rem;
+    }
+    .email-form h4{
+        font-size:2.5rem;
+        margin-left:1rem;
+    }
+    #email-form{
+        padding:2rem 0 2rem 0;
+        width:85%;
+        margin-left:1rem;
+    }
+    .email-form p{
+    font-size:1.5rem;
+    margin-left:1rem;
+    white-space: nowrap;
+    }
+    .copyright-container p{
+        margin-right:24rem;
+        text-align:left;
+    }
 }

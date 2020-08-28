@@ -12,15 +12,48 @@
     Line-Height: 75px;
     background-position: top 40vh center;
 }
+
+#contactemail{
+    Border: 2px solid #828282;
+}
+#overviewtext{
+    Border: 2px solid #828282;
+    border-radius: 5px;
+}
+.submit{
+    padding:1rem 3rem;
+    background-color: #FFFF;
+}
+#buildings{
+    Border: 2px solid #828282;
+    border-radius: 5px;
+    width:100%;
+    
+}
+.options{
+    padding-bottom: 1rem; 
+}
 .contactform{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding:5rem 0 5rem 0;
 }
 .form{
-    width: 25%;
-    align-content: space-around;
-    padding:1rem;
+    width:30%;
+    flex-direction: column;
+   justify-content: space-between;
+    
+}
+.buttons{
+    padding:1rem 0;
+}
+.overviewlabel{
+    padding: 1rem 0 0 0;
+}
+#overviewtext{
+    width:100%;
+    height:30vh;
 }
 .workloc{
     width: 25%;
@@ -29,8 +62,107 @@
 }
 .work{
     padding: 1rem 0 0 0;
+    
 }
 .work p{
     padding:0;
     margin:0;
+}
+@media (max-width: 500px) {
+  header{
+     width:100%
+  }
+    
+    .hamburger-menu-icon {
+        
+        left:10rem;
+        width: auto;
+        margin-top: 2%;
+    }
+
+    .jumbotron {
+        height: 20vh;
+    }
+
+    .header{
+        background-image: url(../img/contact/contact-mobile-jumbotron.png);
+        background-size: 100%;
+        height: 30vh;
+        padding: 0 0 0 0;
+        color:#FFFF;
+        Font-Weight: Bold;
+        Font-Size: 32px;
+        Line-Height: 75px;
+        background-position: top 35vh center;
+    }
+    .header h1{
+        margin-right:10rem;
+        white-space: nowrap;
+    }
+    .contactform{
+        flex-direction: column;
+        align-content: center;
+        padding:0;
+    }
+    .form h2{
+        font-size:2.5rem;
+        white-space: nowrap;
+        margin:1rem 0 1rem 1rem;
+    }
+    .contactform{
+        margin-left:1rem;
+    }
+    .contactformtext{
+        margin:0 auto;
+        font-size:1rem;
+    }
+    #contactemail{
+        width:28rem;
+    }
+    #disclosure{
+        font-size:.75rem;
+    }
+    #buildings{
+        width:28rem;
+    }
+    .overviewlabel, #overviewtext{
+        width:28rem;
+        white-space: nowrap;
+    }
+    .submit{
+        width:28rem;
+    }
+    .buttons{
+        white-space: nowrap;
+    }
+    .radiobutton{
+        white-space: nowrap;
+    }
+    .workloc h2{
+        white-space: nowrap;
+        font-size:2.5rem;
+        margin-bottom:0;
+    }
+    .work h2{
+        font-size:2rem;
+        margin-bottom:0;
+    }
+    .work p{
+        line-height: 2.5rem;
+    }
+    .email-form h4 {
+        width:28rem;
+        font-size:2rem;
+        white-space: nowrap;
+        margin-bottom:1rem;
+    }
+    #email-form{
+        width:28rem;
+    }
+    .email-form p{
+        width:28rem;
+        font-size:1rem;
+        white-space: nowrap;
+        margin-bottom:1rem;
+    }
 }

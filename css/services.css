@@ -209,6 +209,7 @@ footer h4 {
 }
 
 @media (max-width: 850px) {
+    
     .jumbotron h1 {
         bottom: 13rem;
     }
