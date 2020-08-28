@@ -220,7 +220,7 @@ footer h4 {
     header{
         display: flex;
         flex-direction: row;
-        width: 43rem;
+        width: 55rem;
          }
     nav #header{
         font-size:3rem;
@@ -239,7 +239,7 @@ footer h4 {
         width:140%;
     }
     .home img{
-        width:43rem;
+        width:55rem;
     }
     #header {
         font-size: 1.5rem;
@@ -256,10 +256,10 @@ footer h4 {
     footer {
         flex-direction: column;
         justify-content: space-evenly;
-        width: 140%;
+        width: 55rem;
     }
     .copyright-container{
-        width: 140%;  
+        width: 55rem;  
     }
     footer input {
         height: 2vh;
@@ -268,7 +268,7 @@ footer h4 {
         flex-direction: column;
     }
     .aboutbox img{
-        width:39rem;
+        width:55rem;
         padding-left:2%;
        
     }
@@ -296,24 +296,26 @@ footer h4 {
     }
     body p{
         font-size:2rem;
-        width: 30rem;
-     
-        
+        width: 30rem;   
     }
     .projecttext{
-        width:70rem;
+        width:100rem;
         text-align: left;
-        margin-left:11rem;
+        margin-left:23rem;
         padding-top:8rem;
+    }
+    .projectimg{
+        width:55rem;
+        margin-left:21rem;
     }
     .projecttext p{
         line-height: 2.5rem;
     }
     #outskirts .splashtext{
-        margin-left:20rem;
+        margin-left:15rem;
     }
     .splashtext{
-        margin-right:9rem;
+        margin-right:15rem;
         font-size:1.5rem;
         padding:2rem;
         position: absolute;
@@ -344,7 +346,14 @@ footer h4 {
     white-space: nowrap;
     }
     .copyright-container p{
-        margin-right:24rem;
+        margin-right:36rem;
         text-align:left;
+    }
+    .toptext P{
+        width:50rem;
+    }
+    .toptext{
+        margin-left:1rem;
+        width:60rem;
     }
 }
